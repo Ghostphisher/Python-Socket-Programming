@@ -1,0 +1,90 @@
+Python Network/Socket Programming Notes
+
+1. Basic Networking - IP Addresses
+
+IP Address - An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication
+
+Two types of IP Address:
+  
+  1. Public IP - Provided by the Internet Service Provider (ISP) - Found by simply searching "What's my IP?" on your browser
+  
+  2. Privare IP - Provided by the router and WIFI devices - Found by simply typing ipconfig on cmd promt (Windows) or ifconfig on terminal (Linux & Mac)
+  
+Static IP Address - Never Changes - Example: Servers and Websites
+
+Dynamic IP Address - Always kept changing on every restarts - Example : Computers and Mobile Devices
+
+2. Basic Networking - Ports
+
+  1. HTTP    -  Web Pages           -  80   -  httplib, urllib, xmlrpclib
+  2. NNTP    -  Usenet News         -  119  -  nntplib
+  3. FTP     -  File Transfers      -  21   -  ftplib, urllib
+  4. SMTP    -  Sending emails      -  25   -  smtplib
+  5. POP3    -  Fetching emails     -  110  -  poplib
+  6. IMAP4   -  Fetching emails     -  143  -  imaplib
+  7. Telnet  -  Command Lines       -  23   -  telnetlib
+  8. Gopher  -  Document Transfers  -  70   -  gopherlib, urllib
+  
+For full list of Ports refer : https://www.webopedia.com/quick_ref/portnumbers.asp
+
+3. Basic Networking - Sockets
+
+Sockets - Two processes that run on the same machine, or different machines, communicate through sockets. Sockets are seen as the end of the two-way communication between two processes; they allow processes to communicate with each other ​using a file descriptor and are commonly used in client-server applications that allow for communication between multiple applications.
+
+Socket Commands :
+  
+  1. socket.socket()    - creates a socket for communication
+  2. s.bind(host, port) - binds the IP address and port for communication process
+  2. s.send()           - sends the message throught the socket conncetion
+  4. s.listen()         - receiver uses this to listen on the machine to receive the connection
+  5. s.recv()           - receives the message to the receiver machine
+  6. s.close()          - finally this command is used to close the socket connection
+  
+4. Basic Networking - Direct & Reverse Connection
+
+Direct Connection - create a tcp socket and bind it with our IP Address and request the client to accept the Socket Connection to access remotely
+
+Reverse Connection -  The Connection initiated by the victim's computer to the attacker computer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
